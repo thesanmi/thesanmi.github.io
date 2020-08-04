@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>The Sanmi</title>
-</head>
+    <script>
+     function getPageTheme(){
+        var today = new Date();
+        var hour = today.getHours();
+        alert(hour);
+        var bodyElement = document.getElementById("body");
+        
+        if (hour > 7 && hour < 19){
+            bodyElement.classList.add("w3-text-black", "bgimg-light");
+        }
+        else {
+            bodyElement.classList.add("w3-text-white", "bgimg-dark");
+        }
+    }
+    window.onload = getPageTheme;
+    </script>    
+<title>The Sanmí</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="landingPage.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg-dark {
+  background-image: url('/images/DSC_0922.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg-light {
+  background-image: url('/images/yellow_patterns.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 <body>
-
-<h1>Coming Soon</h1>
-<p>Moving from wordpress so building from the ground up. please be patient. You can still access the old site <a href="http://thesanmi.wordpress.com/">on wordpress here</a></p>
+<div id="body" class="w3-display-container w3-animate-opacity">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    The Sanmí
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-center w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Moving from Wordpress so building from the ground up ... be patient. <br> You can still access <a href="http://thesanmi.wordpress.com/">the old blog here</a></p>
+  </div>
+</div>
 </body>
 </html>
