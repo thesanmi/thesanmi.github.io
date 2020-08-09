@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:100);
+
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3em;
+  margin: .2em .5em;
+  color: rgba(0,0,0, 0.3);
+}
+body {
+    background-color: rgba(180, 180, 180);
+    height: 100%;
+}
+
+/* video {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+} */
+
+.center {
+  height: 100vh;
+  min-width: 200vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+.fixed{
+  margin: 0 auto; display: block;
+}
+
+.hide2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-div{
+  width:100%;
+  position:absolute;
+  bottom:10px;
+}
+
+.player-center {
+  margin: auto auto; 
+  display: block;
+}
