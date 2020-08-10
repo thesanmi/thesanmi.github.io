@@ -1,27 +1,29 @@
 <html>
-   <head>
-      <meta http-equiv="Content-Security-Policy" content="media-src *">
-      Content-Security-Policy: media-src <source>;
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <title>Gimme Dat!</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="main.css">
-      <link rel="shortcut icon" href="/favicon.ico">
-  </head>
+
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <title>Gimme Dat!</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="main.css">
+   <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
 <body background="gimmeDat.gif">
 
    <body>
-      <!-- <div style="width:100%;position:absolute;bottom:10px;">
-         <audio id="gimmeDatAudio" controls autoplay loop style="margin: auto auto; display: block;"> -->
-            <div class="player-div">
-               <audio class="player-center" id="gimmeDatAudio" controls autoplay loop >
+      <div class="player-div">
+         <audio class="player-center" id="gimmeDat" controls autoplay loop>
             <source src="gimmeDat.mp3" type="audio/mpeg">
             Eyah, your browser does not support this video format. Fix up my guy
          </audio>
+         <!-- <video id="GimmeDat" class="center" controls autoplay loop>
+            <source src="GimmeDat.mp4" type="video/mp4">
+                Eyah, your browser does not support this video format. Fix up my guy
+        </video> -->
       </div>
       <script>
-         document.getElementById('gimmeDatAudio').play();
+         document.getElementById('gimmeDat').play();
       </script>
    </body>
 
